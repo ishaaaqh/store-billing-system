@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import products from './Utilities/Products'; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>this is the billing application</p>
+      
+      <ul>
+      {Object.entries(products).map(product => <li key={product[0]}>{product[0]}, <ul>{Object.entries(product[1]).map( subproduct => <li key={subproduct[1]}>{subproduct[1]}</li>)}</ul>}</li>)}
+     </ul>
     </div>
   );
 }

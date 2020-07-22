@@ -4,8 +4,8 @@
  */
 
 const config = {
-  name: 'React Redux Saga Boilerplate',
-  description: 'Boilerplate with React and Redux with Redux Saga',
+  name: 'Custom Billing system with react-redux-saga',
+  description: 'This is a custom billing sysem for store using react-redux-saga',
 };
 
 export default config;
